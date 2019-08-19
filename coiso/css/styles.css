@@ -1,0 +1,29 @@
+
+			body{
+				
+				background-image: url("../img/cevada3.jpg");
+				background-size: cover;
+				color: white;
+				font-family: verdana;
+			}
+			a{
+				color: white;
+				background-color: rgba(0,0,0,0.5);	
+			}
+			.cerveja{
+				color: yellow;
+			}
+			#lupulo {
+				font-weight: bold;
+				font-size: 20px;
+				border: 1px solid white;
+			}
+			p{
+				background-color: rgba(0,0,0,0.5);
+			}
+
+
+
+
+
+	
