@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+}
+
+nav{
+	background-color: #252520;
+	/*width: auto;*/
+}
+ul{
+	list-style-type: none;
+
+}
+li{
+	display: inline;
+}
+li a{
+	text-decoration: none;
+	text-align:center;
+	margin: 5%;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	color: #DFE0D8;
+}
+
+img{
+	
+
+}
+
+h1{
+	color: #DFE0D8;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#conteudo{
+	background-color: #B7AB8B;
+
+}
