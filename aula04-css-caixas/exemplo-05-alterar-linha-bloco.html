@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				color: #111111;}
+			li {
+				display: inline; 
+				margin-right: 10px;}
+			li.coming-soon {
+				display: none;}
+
+			li.coming-soon-visibility {
+				visibility: hidden;
+			}	
+
+			div.detalhes {
+				background-color: #55ACEE;
+				color: white;
+				line-height: 1.5em;
+				border: 2pt solid blue;
+				padding: 10pt;
+			}
+			span.a {
+				display: inline; /* the default for span */
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;  
+				background-color: yellow; 
+			}
+
+			span.b {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;    
+				background-color: yellow; 
+			}
+
+			span.c {
+				display: block;
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;    
+				background-color: yellow; 
+			}
+		</style>
+		<script>
+			function alternarDisplay() {
+ 				 console.log("script para mudar as propriedades de display");
+ 				 var x = document.getElementsByClassName("coming-soon");
+ 				 
+ 					 if (x[0].style.display === "none") {
+   						 x[0].style.display = "inline-block";
+ 					 } else {
+   						 x[0].style.display = "none";
+ 				 }
+			}
+	</script>
+		
+	</head>
+	<body>
+		<div class="detalhes">
+		<h1> Alterar em linha ou em bloco e visibilidade de caixas</h1>
+		<p>
+			A propriedade <strong>display</strong> permite transformar um elemento de linha em um elemento de bloco ou vice-versa. 
+			Valores:
+		</p>
+
+			<div style="background-color: #7B68EE; padding: 5pt;">
+			<dl>
+				<dt> inline</dt> 
+				<dd> transforma um elemento de bloco em um elemento de linha</dd>
+				<dt> block <dt>
+				<dd>  elemento de linha se transforma em um elemento de bloco</dd>
+				<dt> inline-block </dt>
+				<dd> o elemento se comporta como elemento de linha, mas mantem características de um elemento de bloco (por exemplo, pode-se estabelecer largura e altura: width, height, etc..)
+				</dd>
+				<dt> none </dt>
+				<dd> oculta o elemento da página. Útil para não mostrar inicialmente um elemento na página, mas após interação com usuário (por meio de controle via código javascript), mostrar o conteúdo
+					<br>
+					<button onclick="alternarDisplay()">Mostrar/esconder elemento</button></dd>
+			</dl>
+
+		</div>
+		<p>
+			A propriedade <strong> visibility </strong> permite ocultar caixas, mas deixa um espaço onde o elemento estaria.
+			Os valores podem ser <strong>hidden</strong> ou <strong>visible</strong>.
+		</p>
+	    </div>
+	    <h2> Propriedade <strong>display</strong>: </h2>
+		<ul style="border: 1pt solid black; background-color: cyan;">
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon" id="services">Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+
+		<h2> Propriedade <strong>visibility:</strong> </h2>
+		<ul style="border: 1pt solid black; background-color: cyan;">
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon-visibility" >Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+		
+	</body>
+</html>

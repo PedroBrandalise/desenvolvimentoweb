@@ -1,0 +1,17 @@
+body { background-image: url("../img/trigo.jpg");
+	   background-size: cover;
+	   color: white;
+
+	}
+h1   {color: blue;}
+p    {color: red;}
+
+.cookie {
+	color: yellow;
+}
+
+#acucar {
+		font-family: verdana;
+		border: 1px solid powderblue;
+  		margin: 50px;
+}

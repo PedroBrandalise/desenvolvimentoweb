@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+
+{%block conteudo%}
+	<div class="card trans-card">
+			<div class="card-body">
+			
+				<h2>Alterar produto #{{prod.id}}</h2>
+				<form action="/update/{{prod.id}}" method="POST">
+					Descrição <br>
+					<input type="text" name="desc" value="{{prod.descricao}}" id="desc" class="form-control"><br>
+					Preço de custo <br>
+					<input type="text" type="number" name="preco_custo" id="preco_custo"  value="{{prod.preco_custo}}"class="form-control"> <br>
+					Preço de venda <br>
+					<input type="text" type="number"  value="{{prod.preco_venda}}" name="preco_venda" id="preco_venda" class="form-control"> <br>
+
+					<input type="submit" value="Adicionar" class=" btn btn-primary">
+				</form>
+			</div>
+		</div>
+{%endblock%}

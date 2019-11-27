@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clear</title>
+		<style type="text/css">
+			body {
+				width: 750px;
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;}
+			p {
+				width: 230px;
+				float: left;
+				margin: 5px;
+				padding: 5px;
+				background-color: #efefef;}
+			.clear {
+				clear: left;}
+			div.detalhes {
+				background-color: #55ACEE;
+				color: white;
+				line-height: 1.5em;
+				border: 2pt solid blue;
+				padding: 10pt;
+				margin-bottom: 20pt;
+			}
+			strong {
+				color: #21618C; 
+				border: 1pt solid;
+				padding: 1pt;
+				font-family: Courier;
+			}	
+			.center {
+  					display: block;
+  					margin-left: auto;
+  					margin-right: auto;
+  					width: 50%;
+			}
+		.button {
+			background-color: white; 
+			color: black;
+			border: 2px solid #008CBA;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		}
+		.button:hover {
+ 			 background-color: #008CBA;
+ 		 	color: white;
+ 		 	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+
+		</style>
+		<script type="text/javascript">
+			function setClearBoth(){
+					var par = document.getElementById("paragrafo");
+					if (par){
+						console.log(par);
+						if (par.style.clear == 'both'){
+							par.style.clear = 'none'; 
+							par.style.color = "#665544";
+						}
+						else{	
+							par.style.clear = "both";
+							par.style.color = "#CCCC00";
+						}
+					}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>The Evolution of the Bicycle</h1>
+		<div class="detalhes">
+			<h2> Uso da propriedade <strong> clear </strong> </h2>
+			<ul> <li> A propriedade <strong>clear</strong> permite determinar que nenhum elemento dentro do mesmo contêiner deve tocar os lados direto ou esquerdo da caixa </li>
+				<li> os valores possíveis são <strong> left, right, both e none </strong></li>
+				<li> Perceba que o parágrafo <i> "In 1865, the velocipede..."</i> usa agora a propriedade <strong>	clear:left</strong></li>
+				
+			</ul>
+			<button onclick="setClearBoth()" class="center button"> Alternar a propriedade <strong>clear</strong> entre <strong>	both</strong> e <strong> none </strong>no parágrafo <i> It was  ... </i>" </button>
+		</div>
+		<p>In 1817 Baron von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+		<p >The device know as the Draisienne (or "hobby horse") was made of wood, and propelled by pushing your feed on the ground in a gliding movement.</p>
+		<p id="paragrafo">It was not seen a suitable for any place other than a well maintained pathway. </p>
+		<p class="clear" style="color:red;">In 1865, the velocipede (meaning "fast foot") attached pedals to the front wheel, but its wooden structure made it extremely uncomfortable.</p>
+		<p>In 1870 the first all-metal machine appeared. The pedals were attached directly to the front wheel. 
+		<p>Solid rubber tires and the long spokes of the large front wheel provided a much smoother ride than its predecessor.</p>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+         </head>
+     
+<body>
+        
+        <div class="container-fluid">
+            
+            <form action="http://127.0.0.1:5000/check" method="POST"  style=" margin-top: 50px; margin-bottom: 15px;  background: #f7f7f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);padding: 30px;"> 
+                <h3> Cadastro </h3> 
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="passwd">Password</label>
+                    <input type="password" class="form-control" name="passwd" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="endereco">Endereço</label>
+                  <input type="text" class="form-control" name="endereco" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" name="cidade">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select name="estado" class="form-control">
+                      <option selected>Paraná</option>
+                      <option>Santa Cantarina</option>
+                      <option>Rio Grande do Sul</option>
+                 
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="quero">
+                    <label class="form-check-label" for="gridCheck">
+                      Quero me manter informado
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+
+            <div class="container" style="display:none">
+                <h3>Clientes </h3>
+
+            </div>
+</body>
+</html>

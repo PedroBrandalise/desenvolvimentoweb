@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Caixas CSS e Layout</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				color: #34495E;
+				background-color: #E8F8F5  ;
+				margin-left:  auto;
+				margin-right: auto;
+				width: 900px;
+				font-size: 20px;
+ 				line-height: 1.5;}
+
+			h1,h2 { text-align: center; }
+			
+			h1 {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				padding: 10px;
+				margin: 0px;
+				width: 100%;
+				background-color: #efefef;}
+
+
+			strong {
+				color: #21618C; 
+				border: 1pt solid ; 
+				padding: 2pt; 
+				font-family: Courier, Arial, Verdana;}
+			
+			.center {
+  					display: block;
+  					margin-left: auto;
+  					margin-right: auto;
+  					width: 50%;
+			}
+
+			</style>
+	</head>
+	<body>
+		
+		<h1> CSS Caixas e Layout </h1>
+		<h2 > Caixas CCS  </h2>
+		
+		<ol style="border: 2pt solid #0088dd;  margin: auto; border-radius: 25px;">
+		<li> <a href="exemplo-01-largura-altura.html"> Largura e Altura de Caixas </a> </li>
+		<li> <a href="exemplo-02-limitando-a-largura.html"> Limitando a largura </a> </li>
+		<li> <a href="exemplo-03-limitando-a-altura.html"> Limitando a altura </a> </li>
+		<li> <a href="exemplo-04-excesso-de-conteúdo.html"> Excesso de conteúdo</a> </li>
+		<li> <a href="exemplo-05-alterar-linha-bloco.html"> Alterar elementos de linha em bloco e vice-versa </a></li>
+		<li> <a href="exemplo-06-exemplo-completo.html"> Um exemplo completo </a></li> 
+	</ol>
+	<hr style="border: solid 1px #4135FF">
+		<h2> Layout </h2>
+		<figure>
+			<img src="./images/layout.png" alt="exemplo de layout para um site web" class="center">
+		</figure>
+		<p> Conceitos chave para posicionamento de elementos </p>
+		<p> CSS trata cada elemento como estivesse em uma caixa própria. A caixa pode ser em nível de bloco ou uma caixa em linha.</p>
+		<p> <strong>Elementos containers</strong>: se um elemento de nível de bloco estiver dentro de outro elemento de nível de bloco, então a caixa externa é conhecida como elemento <strong>container</strong> ou elemento pai. Um elemento pai ou container é definido por meio de um elemento <strong> div</strong>.
+		</p>
+		<p> CSS tem os seguintes <strong> esquemas de posicionamento</strong>, que são especificados pelo elemento <strong>position</strong>:
+		<ol style="border: 2pt solid #0088dd;  margin: auto; border-radius: 25px;">
+			<li> <a href="exemplo-07-fluxo-normal.html"> Fluxo normal (position:static)</a> </li>
+			<li> <a href="exemplo-08-posicionamento-relativo.html"> Posicionamento relativo (position:relative)</a> </li>
+			<li> <a href="exemplo-09-posicionamento-absoluto.html"> Posicionamento absoluto (position:absolute) </a> </li>
+			<li> <a href="exemplo-10-posicionamento-fixo.html"> Posicionamento fixo (position:fixed) </a> </li>
+			<li> <a href="exemplo-11-sobrepondo-elementos.html"> Sobrepondo elementos (zindex) </a> </li>
+			<li> <a href="exemplo-12-elementos-flutuantes.html"> Elementos flutuantes (float:right, float:left...)</a> </li>
+			<li> <a href="exemplo-13-elementos-lado-a-lado-com-float.html"> Elementos lado a lado com elementos flutuantes</a> </li>
+			<li> <a href="exemplo-14-isolando-elementos-flutuantes.html"> Isolando  elementos flutuantes (<strong>clear:left</strong>)</a> </li>
+			<li> <a href="exemplo-15-criando-layouts-multicoluna.html"> Criando layouts multicolun com elementos flutuantes (<strong>float:</strong>)</a> </li>
+			<li> <a href="exemplo-16-criando-layouts-3-colunas.html"> Exemplo com três colunas </a> </li>
+		 
+		</ol>
+			<hr style="border: solid 1px #4135FF;">
+		<h2> Layouts:  largura fixa e  fluídos </h2>
+		<p> Designs com layout de largura fixa não mudam de tamanho quando o usuário aumenta ou diminui o tamanho da tela do navegador. As dimensões tendem as ser dadas em pixels.
+		</p>
+
+		<p> Designs com layouts fluídos (líquidos) estendem e compactam à medida que o usuário aumenta ou dominui o tamanho da janela do navegadores. As dimensões são dadas em porcentagens.
+		<ol style="border: 2pt solid #0088dd;  margin: auto; border-radius: 25px;">
+			<li> <a href="exemplo-17-layout-largura-fixa.html"> Exemplo de layout em largura fixa </a> </li>
+			<li> <a href="exemplo-18-layout-liquido.html"> Exemplo de layout líquido (fluído) </a> </li>
+
+
+		</ol>	
+
+		<hr style="border: solid 1px #4135FF;">
+
+
+
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fixed Width Layout</title>
+		<style type="text/css">
+			* {
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 960px;
+				margin: 0 auto;}
+			#content {
+				overflow: auto;
+				height: 100%;}
+			#nav, #feature, #footer {
+				background-color: #efefef;
+				padding: 10px;
+				margin: 10px;}
+			.column1, .column2, .column3 {
+				background-color: #efefef;
+				width: 300px;
+				float: left;
+				margin: 10px;}
+			li {
+				display: inline;
+				padding: 5px;}
+
+			div.detalhes {
+				background-color: #55ACEE;
+				color: white;
+				line-height: 1.5em;
+				border: 2pt solid blue;
+				padding: 10pt;
+				margin-bottom: 20pt;
+			}
+			strong {
+				color: #21618C; 
+				border: 1pt solid;
+				padding: 2pt;
+				font-family: Courier;
+			}
+		</style>
+		<script type="text/javascript">
+			function alternarVisibilidade(){
+				var detalhes = document.getElementsByClassName("detalhes");
+				
+				if(detalhes.length > 0){
+					console.log (detalhes);
+					d = detalhes[0];
+
+					if (d.style.visibility == 'hidden'){
+						d.style.visibility = 'visible';
+					}
+					else{
+						d.style.visibility = 'hidden';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="detalhes">
+			<h2> Um Layout de largura fixa </h2>
+			<p> Para criar layouts em largura fixa, são usados vários elementos <strong>div</strong>, sendo que cada elemento usa <strong>id</strong> ou <strong>class</strong> para identificar seu propósito na página</p>
+			
+		</div>
+
+		<div id="header">
+			<h1>Logo</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><button onclick="alternarVisibilidade()" class="center"> Alterna a visibilidade do texto acima para observar o layout da página </button> </li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div id="feature">
+				<p>Feature</p>
+			</div>
+			<div class="article column1">
+				<p>Column One</p>
+			</div>
+			<div class="article column2">
+				<p>Column Two</p>
+			</div>
+			<div class="article column3">
+				<p>Column Three</p>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&copy; Copyright 2011</p>
+		</div>
+	</body>
+</html>

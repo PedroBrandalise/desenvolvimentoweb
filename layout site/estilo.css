@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arvo', serif;
+}
+
+.header-img{
+  height: 500px;
+  max-width: 100%;
+  background-image: url('strato.jpg');
+  background-size: cover;
+  color: white;
+  z-index: 1;-
+  position: fixed;
+  width: 100%;
+}
+
+.conteudo1{
+	float: left;
+	max-width: 40%;
+	margin: 2.5%;
+	
+	padding: 2%;
+	background-color:  #DFCFB9;
+
+	z-index: 3;
+
+}
+
+.conteudo{
+	
+	text-align: justify;
+	
+	z-index: 3;
+	
+
+	padding-top: 500px;
+	
+
+
+}
+
+.conteudo2 {
+	float: right;
+	float: auto;
+	background-color:  #DFCFB9;
+	padding: 2%;
+	max-width: 40%;
+	margin: 2.5%;
+	z-index: 3;
+	
+
+
+}
+footer{
+  background-color: #4F311C;
+  color: white;
+  clear: both;
+  padding:1%;
+
+}
+
+body{
+	background-color: #A78C68;
+}

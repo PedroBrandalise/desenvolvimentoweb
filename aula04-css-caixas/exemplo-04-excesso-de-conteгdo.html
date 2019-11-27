@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Excesso de conteúdo</title>
+		<style type="text/css">
+			div.principal {
+				font-family: Arial, Verdana, sans-serif;
+				color: #111111;
+				font-size: 90%;
+				line-height: 1.2em;
+				width: 200px;}
+			h2 {
+				color: #0088dd;
+				border-bottom: 1px solid #0088dd;}
+			p {
+				min-height: 30px;
+				max-height: 85px;}
+			p.one {
+				overflow: hidden;}
+			p.two {
+				overflow: scroll;}
+			p.three {
+				overflow: auto;
+			}	
+			div.detalhes {
+				background-color: #55ACEE;
+				color: white;
+				line-height: 1.5em;
+				border: 2pt solid blue;
+				padding: 10pt;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="detalhes">
+			<h1> Excesso de conteúdo </h1>
+			<ul>
+				<li> a propriedade <strong> overflow  </strong> informa o navegador oque fazer se o conteúdo dentro de uma caixa for maior que a própria caixa;</li>
+				<li> a propriedade <strong>hidden</strong> simplesmente não mostra o conteúdo; </li>
+				<li> a propriedade <strong>scroll</strong> adiciona uma barra de rolagem; </li>
+				<li> a propriedade <strong>auto</strong> automaticamente adiciona a barra de rolagem. </li>
+
+			</ul>
+
+		</div>
+		<div class="principal">
+		<h2>Fender Stratocaster</h2>
+		<p class="one">The Fender Stratocaster or "Strat" is one of the most popular electric guitars of all time, and its design has been copied by many guitar makers. It was designed by Leo Fender, George Fullerton and Fredie Tavares in 1954.</p>
+		<h2>Gibson Les Paul</h2>
+		<p class="two">The Gibson Les Paul is a solid body electric guitar that was first sold in 1952. The Les Paul was designed by Ted McCarty in collaboration with popular guitarist Les Paul, whom Gibson enlisted to endorse the new model. It is one of the most well-known electric guitar types in the world.</p>
+
+		<h2 style="color: yellow">Gibson Les Paul (texto encurtado) </h2>
+		<p class="two">The Gibson Les Paul is a solid body electric guitar that was first sold in 1952.</p>
+
+		<h2 style="color: red">Gibson Les Paul (overflow:auto) </h2>
+		<p class="three">The Gibson Les Paul is a solid body electric guitar that was first sold in 1952.</p>
+
+		</div>
+	</body>
+</html>
